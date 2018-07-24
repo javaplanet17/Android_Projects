@@ -1,0 +1,34 @@
+
+public class PagerAdapter extends FragmentStatePagerAdapter {
+
+    int mNoOfTabs;
+
+    public PagerAdapter(FragmentManager fm, int NumberOfTabs){
+        super(fm);
+        this.mNoOfTabs = NumberOfTabs;
+    }
+
+    @Override
+    public Fragment getItem(int position) {
+        switch (position){
+
+            case 0:
+                Example1Fragment EF = new Example1Fragment();
+                return  EF;
+            case 1:
+                Example2Fragment CF = new Example2Fragment();
+                return  CF;
+            case 2:
+                Example3Fragment TF = new Example3Fragment();
+                return  TF;
+            default:
+                return null;
+        }
+
+    }
+
+    @Override
+    public int getCount() {
+        return mNoOfTabs;
+    }
+}
