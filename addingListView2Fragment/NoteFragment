@@ -1,0 +1,38 @@
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.fragment_note, container, false);
+        ListView listView = (ListView)rootView.findViewById(R.id.noteListView);
+
+        NoteAdapter noteAdapter = new NoteAdapter();
+
+        listView.setAdapter(noteAdapter);
+        return rootView;
+
+    }
+
+    public class NoteAdapter extends BaseAdapter {
+        @Override
+        public int getCount() {
+            return 3;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            convertView = getActivity().getLayoutInflater().inflate(R.layout.adapter_note,null);
+            return convertView;
+        }
+    }
