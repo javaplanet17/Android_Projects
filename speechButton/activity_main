@@ -1,0 +1,30 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<Button
+    android:id="@+id/micBtn"
+    android:drawableTop="@drawable/android"
+    android:onClick="onButtonClick"
+    android:clickable="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@color/colorAccent"/>
+
+<TextView
+    android:id="@+id/micText"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="70dp"
+    android:layout_marginBottom="20dp"
+    android:layout_gravity="bottom"
+    android:text="your wish is my command"
+    android:textColor="@color/black"
+    android:textSize="25dp"
+    />
+</LinearLayout>
