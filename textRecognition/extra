@@ -1,0 +1,17 @@
+"this is done using OCR optical character recognition that is provided by google"
+in build.gradle add 
+implementation 'com.google.android.gms:play-services-vision:9.8.0'
+
+in androidmanifest add
+     <activity android:name=".CameraActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+and 
+
+      <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
